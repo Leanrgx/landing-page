@@ -121,6 +121,28 @@ h2{
 
 /* Here ends body style and starts quote*/
 
+.quotecontainer{
+    display: flex;
+    background-color: #e5e7eb;
+    flex-direction: column;
+    padding: 24px 56px;
+}
+
+.quote{
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.author{
+    align-self: flex-end;
+    font-weight: 900;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+/* Here ends body style and starts quote*/
+
 footer{
     justify-content: center;
     align-items: center;
