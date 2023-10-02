@@ -2,6 +2,9 @@ body{
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #e07a5f;
+    background-image: url(./images/grass-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 /*Here starts header style*/
@@ -96,7 +99,8 @@ button{
     align-items: center;
     margin-bottom: 100px;
     background-color: #eaac8b;
-    margin-bottom: 0;
+    margin: 100px;
+    border-radius: 24px;
     padding-bottom: 36px;
 }
 
