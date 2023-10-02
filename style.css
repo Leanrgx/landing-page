@@ -10,7 +10,7 @@ body{
 footer{
     display: flex;
     background-color: #f2cc8f;
-    color: #3d405b; 
+    color: #355070; 
 }
 
 .logo{
@@ -20,9 +20,7 @@ footer{
 
 .header{
     flex-direction: column;
-    filter: drop-shadow(0px 5px 5px #000000);
-    background: linear-gradient(180deg, #f2cc8f 80%, #f3b86a 100%);
-}
+    filter: drop-shadow(0px 5px 5px #000000);}
 
 header{
     font-size: 24px;
@@ -34,7 +32,7 @@ header{
     display: flex;
     align-items: center;
     background-color: #f3b86a;
-    background: linear-gradient(180deg, #f3b86a 30%, #f2cc8f 100%);
+    background: linear-gradient(180deg, #f3b86a 10%, #f2cc8f 100%);
 }
 
 .headcontainer{
@@ -97,8 +95,9 @@ button{
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
-    background-color: #e07a5f;
+    background-color: #eaac8b;
     margin-bottom: 0;
+    padding-bottom: 36px;
 }
 
 h2{
@@ -121,11 +120,14 @@ h2{
     align-self: center;
 }
 
-.blue{
-    border: 5px solid #81b29a;
+.furbaby{
+    border: 5px solid #355070;
     border-radius: 18px;
     min-width: 200px;
     min-height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
 }
 
 .text{
@@ -136,11 +138,13 @@ h2{
 
 .quotecontainer{
     display: flex;
-    background-color: #3d405b;
+    background-color: #b56576;
     flex-direction: column;
     padding: 24px 250px;
     justify-content: center;
     align-items: center;
+    filter: drop-shadow(0px 5px 5px #000000);
+    filter: drop-shadow(5px 0px 5px #000000);
 }
 
 .quote{
