@@ -1,7 +1,9 @@
 body{
+    position: relative;
     margin: 0;
     background-color: #fff;
-    min-width: 1980px;
+    z-index: 1;
+    min-width: 992px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -10,6 +12,7 @@ body{
     margin-right: 10px;
     margin-left: 10px;
     position: absolute;
+    z-index: 2;
 }
 
 .header{
@@ -20,6 +23,7 @@ body{
     right: -10px;
     left: -10px;
     top: 0;
+    z-index: 3;
 }
 
 .logo{
@@ -59,6 +63,7 @@ a:hover{
     left: -10px;
     right: -10px;
     top: 100px;
+    z-index: 4;
 }
 
 h1{
@@ -70,31 +75,43 @@ h1{
     background-color: #42210B;
     color: #fff;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 0.5em;
     position: relative;
-    left: 78%;
-    top: 4em;
+    left: 74%;
+    top: -13.5em;
     height: 1000px;
     width: 20%;
-    padding: 16px 8px;
+    padding: 16px 16px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
+    z-index: 4;
 }
 
 .sideText{
     position: relative;
-    top: -5em;
+    top: 1.5em;
 }
 
 .placeholder1{
-    position: relative;
-    top: -4.6em;
+    position: absolute;
+    top: -4.1em;
+    left: 10px;
+    width: 100px;
+    height: auto;
+    z-index: 4;
 }
 
 .placeholder2{
     position: relative;
-    top: -64em;
+    top: -5.1em;
     left: 60%;
+    width: 140px;
+    height: auto;
+    z-index: 5;
+}
+
+.content{
+    display: grid;
 }
 
 .descriptionSite{
@@ -114,38 +131,50 @@ h1{
     background-color: #f9ecd2;
     color: #42210B;
     position: relative;
-    top: -800px;
-    min-width: 25%;
-    max-width: 30%;
-    left: 10%;
+    width: 55%;
+    height: 80%;
+    max-width: 50%;
+    top: 25em;
+    left: 13%;
     padding: 20px;
     text-align: center;
     border-radius: 50px;
 }
 
 #section-1{
-    margin: 0;
-    padding: 0;
     position: relative;
     font-style: italic;
     font-weight: 100;
-    right: 660px;
+    font-size: 4em;
+    left: -1em;
+    top: -1em;
+
+}
+
+.textNDesc{
+    display: flex;
 }
 
 .section1Description{
+    display: flex;
+    align-items: center;
     background-color: #c69c6d;
     color: #fff;
     position: relative;
-    left: 10em;
-    top: -5em;
+    left: 6em;
+    top: -3em;
     padding: 8px;
-    width: 30%;
-    height: 120px;
-    margin: 0;
+    width: 50%;
+    height: 150px;
 }
 
-.pictureCircles{
+.pictureCircles1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     position: relative;
+    top: -2em;
+    margin-bottom: 20px;
 }
 
 .furbaby{
@@ -155,3 +184,115 @@ h1{
     object-fit: cover;
     border: 5px solid #c69c6d;
 }
+
+.furbaby2{
+    border-color: #42210B;
+}
+
+.section2{
+    position: relative;
+    top: 23em;
+}
+
+#section-2{
+    text-align: end;
+    align-self: center;
+    padding: 8px 40vh;
+    font-size: 3em;
+    margin-top: 50px;
+    background-color: #42210B;
+    color: #c69c6d;
+    position: relative;
+    right: 1.5em;
+    z-index: 5;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.section2Description{
+    display: flex;
+    align-items: center;
+    background-color: #f9ecd2;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    left: 4em;
+    top: -1em;
+    padding: 8px;
+    width: 30%;
+    height: 130px;
+    z-index: 6;
+}
+
+.pictureCircles2{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 33% 33% 33%;
+    background-color: #c69c6d;
+    text-align: center;
+    border-radius: 7vh;
+    margin: 17px;
+    gap: 16px;
+    padding: 20px 40px 50px;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}
+.container2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+
+}
+.container3{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+}
+.container4{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.container5{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.container6{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+.container7{
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+.container8{
+    grid-column-start: 5;
+    grid-row-start: 2;
+}
+.container9{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+}
+.container10{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+}
+.container11{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+}
+.container12{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+}
+
