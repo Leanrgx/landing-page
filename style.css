@@ -30,7 +30,7 @@ body{
     margin-left: 16px;
 }
 
-.headlinks{
+.headerLinks{
     display: flex;
     gap: 8px;
     color: #fff;
@@ -55,7 +55,7 @@ a:visited{
     color: #f9ecd2;
 }
 
-.title{
+.mainTitleContainer{
     background-color: #c69c6d;
     color: #d6c499;
     font-size: 2.8em;
@@ -68,12 +68,12 @@ a:visited{
     z-index: 4;
 }
 
-.furbabiesFureverTitle{
+.mainTitle{
     position: absolute;
     top: -0.6em;
 }
 
-.sideTextContainer{
+.asideContainer{
     background-color: #42210B;
     color: #fff;
     font-weight: 700;
@@ -89,7 +89,7 @@ a:visited{
     z-index: 4;
 }
 
-.sideText{
+.asideText{
     padding-top: 10%;
 }
 
@@ -115,7 +115,7 @@ a:visited{
     display: grid;
 }
 
-.descriptionSite{
+.siteDescription{
     background-color: #f9ecd2;
     color: #42210B;
     width: 60%;
@@ -127,7 +127,7 @@ a:visited{
 
 }
 
-.section1{
+.sectionOne{
     background-color: #f9ecd2;
     color: #42210B;
     width: 55%;
@@ -140,7 +140,7 @@ a:visited{
     border-radius: 50px;
 }
 
-#section-1{
+#subtitleOne{
     position: relative;
     font-style: italic;
     font-weight: 100;
@@ -149,11 +149,11 @@ a:visited{
     top: -1em;
 }
 
-.textNDesc{
+.titleAndDescOne{
     display: flex;
 }
 
-.section1Description{
+.sectionOneDesc{
     display: flex;
     align-items: center;
     background-color: #c69c6d;
@@ -166,14 +166,14 @@ a:visited{
     height: 150px;
 }
 
-.pictureCircles1{
+.picsContainerOne{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
-.furbaby{
+.pictureCircle{
     border-radius: 100px;
     width: 150px;
     height: 150px;
@@ -181,15 +181,15 @@ a:visited{
     border: 5px solid #c69c6d;
 }
 
-.furbaby2{
+.darkBorder{
     border-color: #42210B;
 }
 
-.section2{
+.sectionTwo{
     position: relative;
 }
 
-#section-2{
+#subtitleTwo{
     text-align: end;
     align-self: center;
     padding: 8px 25vw;
@@ -204,7 +204,7 @@ a:visited{
     font-weight: 100;
 }
 
-.section2Description{
+.sectionTwoDesc{
     display: flex;
     align-items: center;
     background-color: #f9ecd2;
@@ -219,7 +219,7 @@ a:visited{
     z-index: 6;
 }
 
-.pictureCircles2{
+.picsContainerTwo{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 33% 33% 33%;
@@ -291,7 +291,7 @@ a:visited{
     grid-row-start: 3;
 }
 
-.section3{
+.sectionThree{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -299,48 +299,46 @@ a:visited{
     margin-top: 4em;
 }
 
-#section-3{
+#subtitleThree{
     font-style: italic;
     font-weight: 100;
     font-size: 4em;
-}
-.section3bg{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
     border: 8px solid #c69c6d;
     border-top-left-radius: 8pc;
-    width: 70vw;
-    height: 5em;
+    width: 30vw;
+    height: 1.5em;
 }
 
-.textNDesc2{
+.titleAndDescThree{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section3Description{
+.sectionThreeDesc{
     text-align: center;
     background-color: #c69c6d;
     color: #fff;
     padding: 8px;
-    width: 50%;
+    width: 30%;
     height: 150px;
 }
 
-.pictureCircles3{
+.picsContainerThree{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
     text-align: center;
     background-color: #c69c6d;
-    border-radius: 7vh;
-    height: 50%;
-    width: 50%;
-    margin: 2em auto;
+    border-radius: 2vh;
+    height: 4.5em;
+    width: 40%;
+    margin: 2em auto 8em;
     padding: 16px;
 }
 
